@@ -1,0 +1,24 @@
+/* Estilos base de toda la página */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #14202B;
+  color: #EFE7D8;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+
+h1, h2, h3 {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+button {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  cursor: pointer;
+}

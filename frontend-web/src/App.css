@@ -1,0 +1,551 @@
+/* Estilos de la aplicación (App.jsx) - armado con flexbox */
+
+.contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ---------- Botones ---------- */
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.btn-primario {
+  background-color: #C1573A;
+  color: #FBF3E9;
+}
+
+.btn-secundario {
+  background-color: #6B8F71;
+  color: #10190F;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: #9AA7B0;
+  border: 1px solid #33495D;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  border-bottom: 1px solid #33495D;
+  padding: 18px 0;
+}
+
+.header-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  background-color: #1D2E3D;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.tab-btn {
+  border: none;
+  background-color: transparent;
+  color: #9AA7B0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.tab-activo {
+  background-color: #24384A;
+  color: #EFE7D8;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 50px 0 35px;
+}
+
+.hero-eyebrow {
+  margin: 0 0 12px;
+  color: #7EA485;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.hero-titulo {
+  font-size: 2rem;
+  line-height: 1.2;
+  max-width: 600px;
+}
+
+.hero-texto {
+  margin-top: 16px;
+  max-width: 600px;
+  color: #9AA7B0;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-numero {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #D9663F;
+}
+
+.stat-texto {
+  color: #9AA7B0;
+  font-size: 0.85rem;
+}
+
+/* ---------- Secciones ---------- */
+
+.seccion {
+  padding: 50px 0 70px;
+}
+
+.seccion-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.seccion-texto {
+  color: #9AA7B0;
+  margin-top: 6px;
+  max-width: 500px;
+}
+
+/* ---------- Filtros ---------- */
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.filtro-btn {
+  border: 1px solid #33495D;
+  background-color: transparent;
+  color: #9AA7B0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.filtro-activo {
+  background-color: #24384A;
+  border-color: #C1573A;
+  color: #EFE7D8;
+}
+
+/* ---------- Lista de peticiones ---------- */
+
+.lista-peticiones {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.peticion-tarjeta {
+  background-color: #1D2E3D;
+  border: 1px solid #33495D;
+  border-radius: 8px;
+  padding: 18px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.peticion-info {
+  flex: 1 1 300px;
+}
+
+.peticion-etiqueta {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7EA485;
+  border: 1px solid #6B8F71;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-bottom: 8px;
+}
+
+.peticion-tarjeta h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.peticion-ruta {
+  color: #9AA7B0;
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+}
+
+.peticion-descripcion {
+  color: #9AA7B0;
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+}
+
+.peticion-horarios {
+  font-size: 0.85rem;
+  color: #9AA7B0;
+  margin: 0 0 6px;
+}
+
+.peticion-horarios span {
+  margin-right: 15px;
+}
+
+.peticion-autor {
+  font-size: 0.8rem;
+  color: #9AA7B0;
+  margin: 0;
+}
+
+.peticion-apoyo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.apoyos-numero {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.btn-apoyar {
+  background-color: #24384A;
+  color: #EFE7D8;
+  border: 1px solid #33495D;
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-apoyar:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* ---------- Lista de recorridos ---------- */
+
+.lista-recorridos {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.recorrido-tarjeta {
+  background-color: #1D2E3D;
+  border: 1px solid #33495D;
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+
+.recorrido-inactivo {
+  opacity: 0.6;
+}
+
+.recorrido-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.recorrido-top h3 {
+  font-size: 1.05rem;
+}
+
+.recorrido-ruta {
+  color: #EFE7D8;
+  font-size: 0.9rem;
+  margin: 0 0 6px;
+}
+
+.recorrido-paradas {
+  color: #9AA7B0;
+  font-size: 0.85rem;
+  margin: 0 0 8px;
+}
+
+.recorrido-meta {
+  color: #9AA7B0;
+  font-size: 0.85rem;
+  margin: 0 0 10px;
+}
+
+.recorrido-horarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.horario-chip {
+  border: 1px solid #6B8F71;
+  color: #7EA485;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.recorrido-tarifa {
+  font-size: 0.85rem;
+  color: #9AA7B0;
+  margin: 0 0 4px;
+}
+
+.recorrido-observaciones {
+  font-size: 0.82rem;
+  color: #9AA7B0;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ---------- Lista de conductores (flexbox) ---------- */
+
+.lista-conductores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.conductor-tarjeta {
+  flex: 1 1 260px;
+  background-color: #1D2E3D;
+  border: 1px solid #33495D;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.conductor-offline {
+  opacity: 0.6;
+}
+
+.conductor-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.conductor-nombre {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-weight: 600;
+}
+
+.estado {
+  font-size: 0.78rem;
+  color: #9AA7B0;
+}
+
+.estado-online {
+  color: #7EA485;
+}
+
+.conductor-meta {
+  font-size: 0.85rem;
+  color: #9AA7B0;
+  margin: 0 0 4px;
+}
+
+.conductor-zonas {
+  font-size: 0.8rem;
+  color: #9AA7B0;
+  margin-top: 8px;
+}
+
+.conductor-telefono {
+  display: inline-block;
+  margin-top: 12px;
+  color: #EFE7D8;
+  text-decoration: none;
+  border-bottom: 1px dashed #C1573A;
+}
+
+/* ---------- Mapa ---------- */
+
+.mapa-caja {
+  width: 100%;
+  height: 420px;
+  border-radius: 8px;
+  border: 1px solid #33495D;
+  overflow: hidden;
+}
+
+.mapa-aviso {
+  background-color: #1D2E3D;
+  border: 1px solid #33495D;
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: #9AA7B0;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+/* ---------- Mensajes ---------- */
+
+.mensaje-info, .mensaje-vacio, .mensaje-error {
+  color: #9AA7B0;
+  font-size: 0.9rem;
+}
+
+.mensaje-error {
+  color: #D9663F;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  border-top: 1px solid #33495D;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: #9AA7B0;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ---------- Modal ---------- */
+
+.modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 16, 22, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-caja {
+  background-color: #1D2E3D;
+  border-radius: 8px;
+  padding: 22px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modal-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.modal-cerrar {
+  background-color: transparent;
+  border: none;
+  color: #9AA7B0;
+  font-size: 1.1rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+  color: #9AA7B0;
+  flex: 1;
+}
+
+.campo-fila {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  background-color: #14202B;
+  border: 1px solid #33495D;
+  border-radius: 4px;
+  padding: 9px 10px;
+  color: #EFE7D8;
+  font-size: 0.9rem;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.modal-botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ---------- Responsive (celular) ---------- */
+
+@media (max-width: 650px) {
+  .header-contenido {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tabs {
+    width: 100%;
+  }
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+  }
+  .hero-titulo {
+    font-size: 1.6rem;
+  }
+  .peticion-tarjeta {
+    flex-direction: column;
+  }
+  .campo-fila {
+    flex-direction: column;
+  }
+}
